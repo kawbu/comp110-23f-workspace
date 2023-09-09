@@ -10,6 +10,7 @@ if len(given_word) != 5:
 given_char = input("Enter a single character: ")
 if len(given_char) != 1:
     print("Error: Character must be a single character.")
+    exit()
 
 print("Searching for " + given_char + " in " + given_word)
 instances = 0
@@ -42,4 +43,3 @@ if instances != 0:
         print(str(instances) + " instances of " + given_char + " found in " + given_word)
 else:
     print("No instances of " + given_char + " found in " + given_word)
-
